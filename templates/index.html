@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Predict Diabetes</h1>
+        <form action = "{{url_for('predict')}}"method = "post">
+            <input type="text" name="glucose_conc" placeholder="glucose_conc"/>
+            <input type="text" name="diastolic_bp" placeholder="diastolic_bp"/>
+            <input type="text" name="thickness" placeholder="thickness"/>
+            <input type="text" name="insulin" placeholder="insulin"/>
+            <input type="text" name="bmi" placeholder="bmi"/>
+            <input type="text" name="age" placeholder="age"/>
+            <input type="text" name="skin" placeholder="skin"/>
+            <button type="submit">predict</button>
+        </form>
+    </div>
+    {{prediction_text}}
+</body>
+</html>

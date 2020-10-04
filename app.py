@@ -1,11 +1,11 @@
 import numpy as np
 from flask import Flask , request , jsonify , render_template
-from joblib import dump, load
+from joblib import dump, load 
 import pickle
 
 
-
 app = Flask(__name__)
+# Diabetes_Prediction\model.pkl
 model = pickle.load(open('model.pkl' , 'rb'))
 # model = load('F:\Machine Learning\Diabetes Prediction\DIABETESPRED.joblib')
 

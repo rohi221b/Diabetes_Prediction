@@ -5,7 +5,8 @@ from joblib import dump, load
 
 
 app = Flask(__name__)
-model = load('F:\Machine Learning\Diabetes Prediction\DIABETESPRED.joblib')
+model = pickle.load(open('model.pkl' , 'rb'))
+# model = load('F:\Machine Learning\Diabetes Prediction\DIABETESPRED.joblib')
 
 @app.route('/')
 def home():

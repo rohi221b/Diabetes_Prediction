@@ -1,6 +1,7 @@
 import numpy as np
 from flask import Flask , request , jsonify , render_template
-from joblib import dump, load 
+from joblib import dump, load
+import pickle
 
 
 
